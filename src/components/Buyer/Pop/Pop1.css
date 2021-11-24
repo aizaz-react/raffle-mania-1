@@ -1,0 +1,25 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    display: none;
+}
+

@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #050A30;
+}
+
+.Carty-Card-Wrapper {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Carty-Card-Checkbox {
+    display: flex;
+    max-width: 5%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Carty-Card-Item {
+    display: flex;
+    max-width: 95%;
+    width: 100%;
+    background: #11163A;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+/* The container */
+.nhy {
+    display: block;
+    position: relative;
+    padding-left: 3.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-size: 2.2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.nhy input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 2px solid #818181;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.nhy input:checked~.checkmark {
+    background-color: #050A30;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.nhy input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.nhy .checkmark:after {
+    left: 0.6rem;
+    top: 0.3rem;
+    width: 0.5rem;
+    height: 1rem;
+    border: solid #818181;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.Carty-Item-1 {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    gap: 1rem;
+}
+
+.CI1-img {
+    display: flex;
+    max-width: 30%;
+}
+
+.CI1-img img {
+    width: 10rem;
+}
+
+.Carty-Item-2 {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+
+}
+
+.CI2-detail {
+    display: flex;
+    max-width: 70%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.CI2-detail h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.CI2-D-sub {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.CI2-D-sub img {
+    width: 2.5rem;
+    object-fit: cover;
+}
+
+.CI2-D-sub p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #F4F4F4;
+}
+
+.tik-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.tik-btn p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #F4F4F4;
+}
+
+.count-button {
+    display: flex;
+    max-width: 15%;
+    background-color: white;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #11163A;
+    padding: 0.6rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.minus,
+.plus,
+.amount {
+    display: flex;
+    max-width: 33.33%;
+    cursor: pointer;
+}
+
+.minus {
+    font-size: 2.2rem;
+}
+
+.tik5 {
+    display: flex;
+    max-width: 30%;
+    width: 100%;
+    background: linear-gradient(276.34deg, #11163A 0%, #3A4385 100%);
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.16);
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.tik5 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #F4F4F4;
+}

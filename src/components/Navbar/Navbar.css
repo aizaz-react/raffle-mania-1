@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600&family=Ubuntu:wght@300;400;500&display=swap');
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #050A30;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.11);
+    border-radius: 0px;
+    padding: 2rem 3rem;
+    position: relative;
+}
+
+.logo {
+    width: 13rem;
+    margin-right: 45px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right ul li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0 10px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #F4F4F4;
+}
+
+.nav-right-text ul li {
+    margin: 0 16px;
+}
+
+.navi-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #11163A;
+    padding: 0.3rem;
+    border-radius: 2rem;
+}
+
+.noti-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+
+}
+
+.notifi-item img {
+    width: 3rem;
+}
+
+.noti-box h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #11163A;
+}
+
+.notifi-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.notifi-item p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #11163A;
+    text-align: left;
+}
+
+.noti-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 30rem;
+    right: 5rem;
+    top: 7rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    opacity: 1;
+    transition: 1s opacity, 150ms height;
+    z-index: 999;
+}
+
+.noti-wrapper-hide {
+    display: none;
+}

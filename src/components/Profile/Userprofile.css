@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 600;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #050A30;
+}
+
+header {
+    min-height: 150px;
+}
+
+.containerz {
+    background-color: #050A30;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: calc(100vh - (150px));
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.header-profilez h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #F4F4F4;
+
+}
+
+.profile-containerz {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.profile-sidebarsz {
+    display: flex;
+    max-width: 100%;
+    gap: 10rem;
+    justify-content: flex-start;
+    flex: 1 1 auto
+}
+
+.left-sidebarz {
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+.left-sidebar-1z {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #11163A;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+    justify-content: flex-start;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.left-upz {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+    justify-content: flex-start;
+    gap: 2rem;
+    max-width: 100%;
+}
+
+.switchz {
+    position: relative;
+    display: inline-block;
+    width: 3.5rem;
+    height: 2.2rem;
+}
+
+.sliderz {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #C4C4C4;
+    transition: .4s;
+    border-radius: 34px;
+    margin-left: -1rem;
+}
+
+.sliderz input {
+    display: none;
+}
+
+.sliderz:before {
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 0.5rem;
+    bottom: 0.3rem;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 5rem;
+}
+
+input:checked+.sliderz {
+    background-color: #050A30;
+}
+
+input:checked+.sliderz:before {
+    transform: translateX(2rem);
+}
+
+.left-sidebar-iconsz {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 15%;
+    cursor: pointer;
+}
+
+.left-sidebar-iconsz img {
+    width: 2rem;
+}
+
+.left-sidebar-contentz {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 5rem;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.left-sidebar-togglez {
+    max-width: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-sidebar-contentz p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    letter-spacing: 0.1px;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+.left-downz {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+}
+
+.btn-fuckz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.btn-fuckz p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.9rem;
+    letter-spacing: 0.1px;
+    color: #11163A;
+}
+
+.btn-fuckz img {
+    width: 18px;
+    height: 18px;
+    margin-top: 0.2rem;
+}
+
+.left-downz button {
+    padding: 0.8rem 3rem;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mid-bar-3z {
+    display: flex;
+    justify-content: center;
+    margin-right: 30rem;
+}
+
+.mid-bar-3z button {
+    padding: 0.8rem 7rem;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.9rem;
+    letter-spacing: 0.1px;
+    color: #11163A;
+}
+
+.left-sidebar-2z {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.left-sidebar-2z button {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.9rem;
+    color: #F4F4F4;
+    background: #050A30;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.16);
+    border-radius: 6px;
+    width: 100%;
+    padding: 1.5rem 0;
+    cursor: pointer;
+}
+
+.mid-barz {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 65%;
+    width: 100%;
+}
+
+.mid-bar-1z {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mid-bar-2z {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.mid-bar-2z p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: #F4F4F4;
+}
+
+.mid-bar-1-avatarz {
+    display: flex;
+    max-width: 30%;
+
+}
+
+.mid-bar-1-contentz {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.mid-bar-1-contentz input {
+    border: none;
+    background-color: #191D42;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.16);
+    border-radius: 6px;
+    padding: 1.5rem;
+    width: 20rem;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+.mid-bar-1-contentz input::placeholder {
+    opacity: 1;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: #F4F4F4;
+    text-align: center;
+}
+
+.mid-bar-1-avatarz img {
+    width: 100%;
+    border: none;
+}
+
+.formicz {
+    border: 1px solid #8B8B8B;
+    box-sizing: border-box;
+    border-radius: 6px;
+    max-width: 90%;
+}
+
+.formicz input {
+    width: 97%;
+    border: none;
+    background: #050A30;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.11);
+    border-radius: 6px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #F4F4F4;
+    padding: 5px;
+}
+
+.formicz input::placeholder {
+    opacity: 1;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #F4F4F4;
+    padding: 0.5rem 0.5rem;
+}
+
+.formicz input:focus {
+    outline: none;
+}
+
+@media (min-width: 2000px) {
+
+    .right-sidebarz {
+        flex: 1 1 auto;
+        max-width: 50%;
+
+    }
+    .mid-bar-3z {
+        margin-right: 30rem;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .right-sidebarz {
+        flex: 1 1 auto;
+        max-width: 50%;
+
+    }
+}
+
+@media (max-width: 1270px) {
+    .profile-sidebars {
+        gap: 5rem;
+    }
+}

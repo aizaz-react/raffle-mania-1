@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 600;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #050A30;
+}
+
+header {
+    min-height: 150px;
+}
+
+.container {
+    background-color: #050A30;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: calc(100vh - (150px));
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.header-profile h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #F4F4F4;
+
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.profile-sidebars {
+    display: flex;
+    max-width: 100%;
+    gap: 10rem;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+}
+
+.left-sidebar {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    justify-content: flex-start;
+    gap: 4rem;
+    width: 100%;
+}
+
+.left-sidebar-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: #11163A;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+    justify-content: flex-start;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.left-up {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+    justify-content: flex-start;
+    gap: 2rem;
+    max-width: 100%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.5rem;
+    height: 2.2rem;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #C4C4C4;
+    transition: .4s;
+    border-radius: 34px;
+    margin-left: -1rem;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 0.5rem;
+    bottom: 0.3rem;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 5rem;
+}
+
+input:checked+.slider {
+    background-color: #050A30;
+}
+
+input:checked+.slider:before {
+    transform: translateX(2rem);
+}
+
+.left-sidebar-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5rem;
+    max-width: 15%;
+    cursor: pointer;
+}
+
+.left-sidebar-icons img {
+    width: 2rem;
+}
+
+.left-sidebar-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 5rem;
+    flex-direction: column;
+    max-width: 70%;
+}
+
+.left-sidebar-toggle {
+    max-width: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-sidebar-content p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    letter-spacing: 0.1px;
+    color: #F4F4F4;
+    cursor: pointer;
+}
+
+.left-down {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+}
+
+.btn-fuck {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.btn-fuck p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.9rem;
+    letter-spacing: 0.1px;
+    color: #11163A;
+}
+
+.btn-fuck img {
+    width: 18px;
+    height: 18px;
+    margin-top: 0.2rem;
+}
+
+.left-down button {
+    padding: 0.8rem 3rem;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.left-sidebar-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.left-sidebar-2 button {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.9rem;
+    color: #F4F4F4;
+    background: #050A30;
+    border: none;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.16);
+    border-radius: 6px;
+    width: 100%;
+    padding: 1.5rem 0;
+    cursor: pointer;
+}
+
+.mid-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 85%;
+    width: 100%;
+
+}
+
+.mid-headf {
+    display: flex;
+}
+
+.mid-headf h2 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #F4F4F4;
+}
+
+.mid-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mid-body img {
+    width: 10rem;
+}
+
+.body1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.body1 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #F4F4F4;
+}
+
+.body1 input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1.8rem;
+    max-width: 2%;
+}
+
+.body2 input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1.8rem;
+    max-width: 2%;
+    border: none;
+}
+
+.body2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.body3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.body3 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #F4F4F4;
+}
+
+.body3 img {
+    width: 2.2rem;
+    background: #11163A;
+    border-radius: 50%;
+    padding: 0.4rem;
+    margin-left: -0.2rem;
+    cursor: pointer;
+}
+
+.hello-world label input {
+    display: none;
+}
+
+.hello-world {
+    display: flex;
+    flex-direction: column;
+}
+
+.hello-world label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.hello-world label .circle {
+    height: 2.2rem;
+    width: 2.2rem;
+    border: 0.3rem solid #9B9B9B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: border-color .5s ease;
+}
+
+.hello-world label input:checked+.circle {
+    border-color: #3A4385;
+}
+
+.hello-world label .circle::before {
+    content: '';
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #3A4385;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 0.50rem;
+    margin-top: 0.50rem;
+    transition: transform .5s ease;
+    transform: scale(0);
+}
+
+.hello-world label input:checked+.circle::before {
+    transform: scale(1);
+}
+
+.radio-b1 {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.radio-b1 h4 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.radio-b1 img {
+    width: 10rem;
+}
+
+.radio-b2 img {
+    width: 10rem;
+}
+
+.radio-b2 {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+@media (min-width: 2000px) {
+    .right-sidebar {
+        flex: 1 1 auto;
+        max-width: 50%;
+
+    }
+    .body3 img {
+        width: 1.4rem;
+        background: #11163A;
+        border-radius: 50%;
+        padding: 0.2rem;
+        cursor: pointer;
+    }
+
+    .body1 input[type=radio] {
+        border: 0px;
+        width: 100%;
+        height: 1.8rem;
+        max-width: 1%;
+    }
+
+    .body2 input[type=radio] {
+        border: 0px;
+        width: 100%;
+        height: 1.8rem;
+        max-width: 1%;
+        border: none;
+    }
+
+
+}
+
+@media (min-width: 1500px) {
+
+    .right-sidebar {
+        flex: 1 1 auto;
+        max-width: 50%;
+
+    }
+    .body3 img {
+        width: 1.4rem;
+        background: #11163A;
+        border-radius: 50%;
+        padding: 0.2rem;
+        cursor: pointer;
+    }
+
+    .body1 input[type=radio] {
+        border: 0px;
+        width: 100%;
+        height: 1.8rem;
+        max-width: 2%;
+    }
+
+    .body2 input[type=radio] {
+        border: 0px;
+        width: 100%;
+        height: 1.8rem;
+        max-width: 2%;
+        border: none;
+    }
+
+
+}
+
+@media (max-width: 1270px) {
+    .profile-sidebars {
+        gap: 5rem;
+    }
+}

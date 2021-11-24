@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #050A30;
+}
+
+header {
+    min-height: 150px;
+}
+
+.Orderreview-Wrapper {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: calc(100vh - (150px));
+    overflow: scroll;
+    flex-direction: column;
+}
+
+.Orderreview-Container {
+    display: flex;
+    max-width: 100%;
+    gap: 2rem;
+    width: 100%;
+    flex-direction: column;
+    padding: 0rem 4rem;
+}
+
+.Order-1 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Tracking-Title1 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Tracking-Title1 h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #F4F4F4;
+}
+
+.Tracking-Left1 {
+    display: flex;
+    max-width: 25%;
+    width: 100%;
+    padding: 1rem;
+    background: #11163A;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+    gap: 1rem;
+}
+
+.Tracking-Left-img1 {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+}
+
+.Tracking-Left-img1 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Tracking-Left-content1 {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Tracking-Left-content1 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #F4F4F4;
+}
+
+.Tracking-Left-content1 h5 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.Tracking-Left-content1 h2 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+.Tracking-Left-content1 span {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #F4F4F4;
+}
+
+.Order-2 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Order-3 {
+    display: flex;
+    max-width: 25%;
+    width: 100%;
+}
+
+.Order-3 button {
+    padding: 1.5rem 0rem;
+    width: 65%;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 500;
+    color: #11163A;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 0.6rem;
+    border: none;
+}
+
+.Order-4 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Order-4 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.O4-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    max-width: 25%;
+    width: 100%;
+    background: #11163A;
+    border-radius: 0.8rem;
+}
+
+.Order-5 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Order-5 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.O5-content {
+    display: flex;
+    max-width: 25%;
+    width: 100%;
+}
+
+.O5-content textarea {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #9B9B9B;
+    background: #11163A;
+    border-radius: 0.8rem;
+    border: none;
+    max-width: 100%;
+    padding: 0.5rem;
+}
+
+.O5-content textarea:focus {
+    outline: none;
+}
+
+.Order-6 {
+    display: flex;
+    max-width: 25%;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.Order-6 button {
+    padding: 1.5rem 0rem;
+    width: 60%;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #11163A;
+    cursor: pointer;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 0.6rem;
+}

@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #050A30;
+}
+
+header {
+    min-height: 150px;
+}
+
+.Product-Wrapper {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: calc(100vh - (150px));
+    overflow: scroll;
+    flex-direction: column;
+}
+
+.Product-Container {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.Product-Section-1 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Product-Section-1-left {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+}
+
+.PS1-L {
+    display: flex;
+    max-width: 30%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.PS1-L img {
+    width: 11rem;
+    object-fit: cover;
+}
+
+.PS1-R {
+    display: flex;
+    max-width: 70%;
+    width: 100%;
+}
+
+.PS1-R img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Product-Section-1-right {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.PS1R-1 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.PS1R-1-L {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.PS1R-1-L h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8rem;
+    color: #F4F4F4;
+}
+
+.PS1R-1-L p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    color: #818181;
+}
+
+.Product-countdown {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Product-countdown img {
+    width: 2rem;
+}
+
+.Product-countdown p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #F4F4F4;
+}
+
+.PS1R-1-R {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    color: white;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.starry {
+    display: flex;
+    max-width: 25%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 4.6rem;
+    padding: 0.5rem 1rem;
+}
+
+.starry img {
+    width: 2rem;
+}
+
+.starry p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #11163A;
+}
+
+.ticktok {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ticktok h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+.ticktok span {
+    font-size: 1.8rem;
+}
+
+.toktick {
+    display: flex;
+    padding: 0.5rem;
+    max-width: 35%;
+    width: 100%;
+    background: linear-gradient(276.34deg, #11163A 0%, #3A4385 100%);
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.16);
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.toktick p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.PS1R-2 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shinra {
+    display: flex;
+    max-width: 90%;
+    width: 100%;
+    line-height: 2rem;
+}
+
+.PS1R-2 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #F4F4F4;
+}
+
+.PS1R-3 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.PS1R-3-a {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.PS1R-3-a p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.PS1R-3-b {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+    gap: 3rem;
+}
+
+.PS1R-3-b button {
+    padding: 1rem;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    letter-spacing: -0.24px;
+    color: #3C3C3B;
+    cursor: pointer;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.4rem;
+}
+
+.PS1R-3-b button:hover {
+    background-color: #3A4385;
+    color: white;
+}
+
+.PS1R-4 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.PS1R-4-L {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.PS1R-4-L p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    color: #F4F4F4;
+}
+
+.pallet {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.ball {
+    cursor: pointer;
+}
+
+.ball-1 {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    background-color: #7B7C7E;
+    border-radius: 50%;
+}
+
+.ball-2 {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    background-color: #E33A3A;
+    border-radius: 50%;
+}
+
+.ball-3 {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    background-color: #FF6B00;
+    border-radius: 50%;
+}
+
+.ball-4 {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    background-color: #0400D0;
+    border-radius: 50%;
+}
+
+.PS1R-4-R {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.count-button1 {
+    display: flex;
+    max-width: 22%;
+    background-color: white;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: #11163A;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.PS1R-5 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.PS1R-5 button {
+    padding: 1rem 4rem;
+    font-size: 1.7rem;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    color: #11163A;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: none;
+    width: 30%;
+}
+
+.Product-Section-2 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Product-Section-2 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 2.5rem;
+}
+
+.Product-Section-3 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Review-Cardic {
+    display: flex;
+    max-width: 70%;
+    width: 100%;
+    background: #11163A;
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.Review-Cardic-Top {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.RCT-L {
+    display: flex;
+    max-width: 50%;
+    gap: 1rem;
+}
+
+.RCT-L img {
+    width: 5rem;
+}
+
+.RCT-L-cont {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+}
+
+.RCT-L-cont h4 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+}
+
+.RCT-L-cont p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+.RCT-R {
+    display: flex;
+    max-width: 7%;
+    width: 100%;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #050A30;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.RCT-R img {
+    width: 1.5rem;
+}
+
+.RCT-R p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+}
+
+.Review-Cardic-Bottom {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Review-Cardic-Bottom p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #F4F4F4;
+    line-height: 2rem;
+}
+
+.Product-Section-4 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Empty-1 {
+    display: flex;
+    max-width: 14.5%;
+    width: 100%;
+}
+
+.Related-Products {
+    display: flex;
+    max-width: 85.5%;
+    width: 100%;
+}
+
+.Related-Products h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #F4F4F4;
+}
+
+.minus,
+.plus,
+.amount {
+    display: flex;
+    max-width: 33.33%;
+    cursor: pointer;
+}
+
+.minus {
+    font-size: 2.2rem;
+}
+
+.Product-Section-5 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.Related-Productss {
+    display: flex;
+    max-width: 85.5%;
+    width: 100%;
+    gap: 3rem;
+}

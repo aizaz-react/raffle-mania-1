@@ -1,0 +1,46 @@
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app {
+    &-btn {
+        width: 220px;
+        height: 80px;
+        margin: 20px 10px;
+        text-align: left;
+        border-radius: 5px;
+        text-decoration: none;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        text-transform: capitalize;
+
+        color: #FFFFFF;
+
+        &.blu {
+            background-color: #000000;
+            box-shadow: 0px 6px 6px rgba(0, 3, 22, 0.8);
+            border-radius: 20px;
+            transition: background-color 0.25s linear;
+        }
+
+        img {
+            width: 23%;
+            text-align: center;
+            font-size: 28px;
+            margin-right: 10px;
+        }
+
+        .big-txt {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 21px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+}

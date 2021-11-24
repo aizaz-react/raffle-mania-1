@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    background-color: #050A30;
+}
+
+header {
+    min-height: 150px;
+}
+
+.Detail-Wrapper {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: calc(100vh - (150px));
+    overflow: scroll;
+    flex-direction: column;
+}
+
+.Detail-Container {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.Detail-Top {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.Detail-Bottom {
+    display: flex;
+    max-width: 100%;
+}
+
+.Detail-title {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Empty {
+    display: flex;
+    max-width: 29%;
+    width: 100%;
+    display: hidden;
+}
+
+.Detail-Head {
+    display: flex;
+    max-width: 71%;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.Detail-Head h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: #F4F4F4;
+}
+
+.Detail-Content {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.Detail-Cat {
+    display: flex;
+    max-width: 25%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.Detail-Cat img {
+    width: 75%;
+}
+
+.Detail-Cards {
+    display: flex;
+    max-width: 75%;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.Section-5-Wrapper {
+    display: flex;
+    max-width: 100%;
+    margin: 5rem 8rem;
+}
+
+.S-5-left {
+    display: flex;
+    max-width: 70%;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.S-5-left h1 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: #F4F4F4;
+}
+
+.S-5-left h5 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    color: #9B9B9B;
+}
+
+.S-5-left p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.3rem;
+    color: #F4F4F4;
+}
+
+.S-5-right {
+    display: flex;
+    max-width: 30%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-btn {
+    width: 22rem;
+    height: 8rem;
+    margin: 2rem 1rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.blu {
+    background-color: #000000;
+    box-shadow: 0px 0.6rem 0.6rem rgba(0, 3, 22, 0.8);
+    border-radius: 2rem;
+    transition: background-color 0.25s linear;
+}
+
+.big-txt {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.1rem;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.app-btn img {
+    width: 23%;
+    text-align: center;
+    font-size: 2.8rem;
+    margin-right: 1rem;
+}
+
+.Detail-cat-kat {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: 55rem;
+    padding: 3rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #11163A;
+    gap: 1.5rem;
+    margin-left: 1rem;
+}
+
+.katty-1 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.katty-2 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    gap: 0.5rem;
+}
+
+.katty-2 button {
+    width: 100%;
+    padding: 1rem;
+    background: #FFFFFF;
+    border-radius: 0.8rem;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+}
+
+.kat2-1 {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+}
+
+.kat2-2 {
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+}
+
+.katty-3 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.katty-3 button {
+    width: 100%;
+    padding: 1rem;
+    background: #FFFFFF;
+    border-radius: 0.8rem;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.katty-4 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFFFFF;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.katty-4 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2rem;
+}
+
+.Menuz {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    color: #000000;
+}
+
+.Menuz select {
+    width: 100%;
+    height: 4rem;
+    max-width: 100%;
+}
+
+.Menuz p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+.Detail-ad1 {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Detail-ad2 {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-list {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-select {
+    padding: 1.2rem;
+    border-radius: 4px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.dropdown-list {
+    border-radius: 4px;
+    background-color: white;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+    transform: translateY(10px);
+    z-index: 999;
+}
+
+.dropdown-list:before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+}
+
+.dropdown-list__item {
+    padding: 1rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.dropdown-list__item:hover {
+    background-color: #9B9B9B;
+}
+
+.katty-5 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFFFFF;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.katty-5 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2rem;
+}
+
+.katty-6 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.katty-7 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.katty-7 p {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.katty-8 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.katty-9 {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.katty-9 button {
+    padding: 1rem;
+    width: 100%;
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #11163A;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+}
